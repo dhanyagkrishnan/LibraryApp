@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title><%=title%></title>
+		<meta name="generator" content="Bootply" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!-- Custom Theme files -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/css/sign.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+            <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+    <!-- //Custom Theme files -->
+    <!-- web font -->
+    <link href="//fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i" rel="stylesheet">
+    <!-- //web font -->
+    
+    </head>
+    
+	<body >
+<header class="navbar navbar-bright navbar-fixed-top" role="banner">
+	<div class="container">
+	  <div class="navbar-header">
+		
+		  
+		  <span class="icon-bar"></span>
+		  <span class="icon-bar"></span>
+		  <span class="icon-bar"></span>
+		</button>
+		<a href="/" class="navbar-brand">Home</a>
+	  </div>
+	  <nav class="collapse navbar-collapse" role="navigation">
+		<ul class="nav navbar-nav">
+			<%for(i=0;i<nav.length;i++){%>
+			  <li>
+				  <a href=<%=nav[i].link%>><%=nav[i].name%></a>
+				</li>
+		   <% }%>
+		 
+		  
+		 
+		</ul>
+		
+	  </nav>
+	</div>
+  </header>
+
+<div class="main-w3layouts wrapper">
+    <h1>Add author</h1>
+    <div class="main-agileinfo">
+        <div class="agileits-top">
+            <form action="/authors" method="POST">
+                <label for="bookname">Authorname</label><br>
+                <input class="text" type="text" name="authorname" placeholder="Authorname" >
+                
+                <label for="country">Country</label><br>
+                <input class="text" type="text" name="country" placeholder="Country"><br>
+                <label for="year">DOB</label><br>
+                <input class="text" type="date" name="date" placeholder="DOB"><br>
+                <label for="image">Image</label><br>
+                <input type="file" id="authorimg" name="authorimg"><br>
+                
+                <input type="submit" value="AddAuthor">
+            </form>
+            
+        </div>
+    </div>
+  
+  <ul class="colorlib-bubbles">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+</div>
+<!-- //main -->
+</body>
+</html>

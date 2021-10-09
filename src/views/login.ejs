@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> SignUp Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!-- Custom Theme files -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/css/sign.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+            <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+    <!-- //Custom Theme files -->
+    <!-- web font -->
+    <link href="//fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i" rel="stylesheet">
+    <!-- //web font -->
+    </head>
+    <body><header class="navbar navbar-bright navbar-fixed-top" role="banner">
+        <div class="container">
+          <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a href="/" class="navbar-brand">Home</a>
+          </div>
+          <nav class="collapse navbar-collapse" role="navigation">
+            <ul class="nav navbar-nav">
+                <%for(i=0;i<navindex.length;i++){%>
+                  <li>
+                      <a href=<%=navindex[i].link%>><%=navindex[i].name%></a>
+                    </li>
+               <% }%>
+             
+              
+             
+            </ul>
+            
+          </nav>
+        </div>
+      </header>
+      
+	<!-- main -->
+	<div class="main-w3layouts wrapper">
+		<h1>Login Form</h1>
+   
+		<div class="main-agileinfo">
+      <p class="alert-danger"> For login use Username as 'admin' and Password as'12345'</p>
+			<div class="agileits-top">
+				<form action="/index" method="post">
+          <label for="username">Username</label><br>
+					<input class="text" type="text" name="username" placeholder="Username" >
+          <label for="password">Password</label><br>
+					<input class="text" type="password" name="password" placeholder="Password">
+					<input type="submit" value="LOGIN">
+				</form>
+                
+				<p>Don't have an Account? <a href="/signup"> Register</a></p>
+			</div>
+		</div>
+		
+		<ul class="colorlib-bubbles">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+	<!-- //main -->
+</body>
+</html>
